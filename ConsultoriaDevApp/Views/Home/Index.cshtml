@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ConsultoriaDevApp.Models.Servico>
+
+@{
+    ViewData["Title"] = "Nossos Serviços";
+}
+
+<section class="hero-section text-center py-5 mb-5">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Consultoria em Desenvolvimento</h1>
+        <p class="lead text-muted">Escolha o serviço ideal para o seu projeto e receba atendimento especializado.</p>
+    </div>
+</section>
+
+<div class="container mb-5">
+    <div class="row g-4">
+        @foreach (var servico in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card service-card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column">
+                        <div class="service-icon mb-3">
+                            <i class="bi bi-code-slash fs-2 text-primary"></i>
+                        </div>
+                        <h5 class="card-title fw-semibold">@servico.Nome</h5>
+                        <p class="card-text text-muted flex-grow-1">@servico.Descricao</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
+                            <span class="badge bg-primary-subtle text-primary px-3 py-2">
+                                <i class="bi bi-clock me-1"></i> @servico.TempoResposta
+                            </span>
+                            <span class="fw-bold fs-5 text-dark">R$ @servico.Preco.ToString("N2")</span>
+                        </div>
+                        <button class="btn btn-primary w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalSolicitacao"
+                                data-servico-id="@servico.Id"
+                                data-servico-nome="@servico.Nome">
+                            Contratar serviço
+                        </button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Modal de solicitação -->
+<div class="modal fade" id="modalSolicitacao" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <div>
+                    <h5 class="modal-title fw-bold">Solicitar serviço</h5>
+                    <p class="text-muted small mb-0" id="modalServicoNome"></p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-flex align-items-center mb-4" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    <span>Seu pedido será analisado e você receberá uma resposta no e-mail informado.</span>
+                </div>
+                <form asp-controller="Solicitacao" asp-action="Criar" method="post" id="formSolicitacao">
+                    <input type="hidden" name="ServicoId" id="inputServicoId" />
+                    <div class="mb-3">
+                        <label class="form-label fw-medium">Seu nome</label>
+                        <input type="text" name="NomeCliente" class="form-control" placeholder="Nome completo" required />
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-medium">Seu e-mail</label>
+                        <input type="email" name="EmailCliente" class="form-control" placeholder="email@exemplo.com" required />
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-medium">Observação <span class="text-muted">(opcional)</span></label>
+                        <textarea name="Observacao" class="form-control" rows="3" placeholder="Descreva brevemente seu problema..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2">
+                        <i class="bi bi-send me-2"></i>Enviar solicitação
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('modalSolicitacao').addEventListener('show.bs.modal', function (e) {
+            const btn = e.relatedTarget;
+            document.getElementById('inputServicoId').value = btn.dataset.servicoId;
+            document.getElementById('modalServicoNome').textContent = btn.dataset.servicoNome;
+        });
+    </script>
+}

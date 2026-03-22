@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Solicitação Enviada";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+    <div class="text-center" style="max-width: 480px;">
+        <div class="mb-4">
+            <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center"
+                 style="width:80px;height:80px;">
+                <i class="bi bi-check-lg text-success" style="font-size:2.5rem;"></i>
+            </div>
+        </div>
+        <h2 class="fw-bold mb-2">Pedido recebido!</h2>
+        <p class="text-muted mb-4">
+            Sua solicitação foi enviada com sucesso.<br>
+            Nosso Tech Líder irá analisar e você receberá uma resposta no e-mail informado.
+        </p>
+        @if (TempData["Mensagem"] != null)
+        {
+            <div class="alert alert-success">@TempData["Mensagem"]</div>
+        }
+        <a href="/" class="btn btn-primary px-4">Ver outros serviços</a>
+    </div>
+</div>

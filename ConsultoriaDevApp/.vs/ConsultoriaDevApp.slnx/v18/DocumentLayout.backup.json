@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\views\\solicitao\\confirmacao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:views\\solicitao\\confirmacao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\controllers\\solicitacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:controllers\\solicitacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322011705_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260322011705_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Confirmacao.cshtml",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Views\\Solicitao\\Confirmacao.cshtml",
+              "RelativeDocumentMoniker": "Views\\Solicitao\\Confirmacao.cshtml",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Views\\Solicitao\\Confirmacao.cshtml",
+              "RelativeToolTip": "Views\\Solicitao\\Confirmacao.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T02:09:26.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SolicitacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Controllers\\SolicitacaoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolicitacaoController.cs",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Controllers\\SolicitacaoController.cs",
+              "RelativeToolTip": "Controllers\\SolicitacaoController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T02:08:45.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260322011705_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322011705_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260322011705_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322011705_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20260322011705_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T01:17:05.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T01:15:34.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T01:14:20.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-22T01:10:10.849Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
