@@ -8,7 +8,7 @@
 
 | Nome | RM |
 |---|---|
-| | |
+|Caio Freitas |RM553190 |
 | | |
 | Caio Hideki | RM553630 |
 | | |
