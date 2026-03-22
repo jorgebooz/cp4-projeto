@@ -543,3 +543,98 @@ footer {
     background: var(--border-hi);
     border-radius: 3px;
 }
+
+/* ── Fake WhatsApp Card ──────────────────────────────────── */
+.whatsapp-card {
+    background: var(--bg2);
+    border: 1px solid #25d36633;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.wpp-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #25d36622;
+    background: #25d36608;
+}
+
+.wpp-icon {
+    width: 40px;
+    height: 40px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.wpp-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.wpp-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.wpp-status {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: #25d366;
+    display: flex;
+    align-items: center;
+}
+
+.wpp-bubble {
+    margin: 20px;
+    background: #1a2e1a;
+    border: 1px solid #25d36630;
+    border-radius: 4px 12px 12px 12px;
+    padding: 14px 16px;
+    max-width: 480px;
+}
+
+.wpp-bubble-header {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: #25d366;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.wpp-text {
+    font-size: 13px;
+    color: #d4e8d4;
+    line-height: 1.75;
+    margin: 0;
+}
+
+    .wpp-text strong {
+        color: #fff;
+    }
+
+.wpp-time {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-align: right;
+    margin-top: 10px;
+    font-family: var(--font-mono);
+}
+
+.wpp-footer {
+    padding: 10px 20px;
+    font-size: 11px;
+    color: var(--text-dim);
+    text-align: center;
+    border-top: 1px solid #25d36618;
+    font-family: var(--font-mono);
+}

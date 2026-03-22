@@ -48,7 +48,10 @@ namespace ConsultoriaDevApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Aprovar(int id, int? devId)
         {
-            var solicitacao = await _db.Solicitacoes.FindAsync(id);
+            var solicitacao = await _db.Solicitacoes
+                .Include(s => s.Servico)
+                .FirstOrDefaultAsync(s => s.Id == id);
+
             if (solicitacao == null) return NotFound();
 
             solicitacao.Status = StatusSolicitacao.Aprovada;
@@ -56,6 +59,15 @@ namespace ConsultoriaDevApp.Controllers
             solicitacao.DevId = devId;
 
             await _db.SaveChangesAsync();
+
+            if (devId.HasValue)
+            {
+                var dev = await _db.Usuarios.FindAsync(devId.Value);
+                TempData["WhatsAppDev"] = dev?.Nome ?? "Dev";
+                TempData["WhatsAppServico"] = solicitacao.Servico?.Nome ?? "";
+                TempData["WhatsAppCliente"] = solicitacao.NomeCliente;
+                TempData["WhatsAppId"] = solicitacao.Id.ToString();
+            }
 
             TempData["Sucesso"] = $"Solicitação #{id} aprovada com sucesso.";
             return RedirectToAction("Index");

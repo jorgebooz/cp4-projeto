@@ -42,7 +42,6 @@ C:\Users\jorge\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\b
 C:\Users\jorge\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.js.map
 C:\Users\jorge\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.min.js
 C:\Users\jorge\.nuget\packages\bootstrap\5.3.8\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -105,7 +104,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\css\site.css
+wwwroot\css\site.css
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\favicon.ico
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\js\site.js
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -167,3 +166,4 @@ C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevA
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\wwwroot\css\site.css

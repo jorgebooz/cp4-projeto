@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322171205_InitialFull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260322171205_InitialFull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322170942_SeedDevs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260322170942_SeedDevs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|c:\\users\\jorge\\onedrive\\\u00E1rea de trabalho\\new folder\\cp4-projeto\\consultoriadevapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05A9E72E-24ED-2B39-3309-2DC8943490FA}|ConsultoriaDevApp.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFsCAAAAAAAAAAAqwHECAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-22T17:17:05.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20260322171205_InitialFull.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322171205_InitialFull.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260322171205_InitialFull.cs",
-              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322171205_InitialFull.cs",
-              "RelativeToolTip": "Migrations\\20260322171205_InitialFull.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T17:12:05.715Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwDkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T17:16:16.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20260322170942_SeedDevs.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322170942_SeedDevs.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260322170942_SeedDevs.cs",
-              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Migrations\\20260322170942_SeedDevs.cs",
-              "RelativeToolTip": "Migrations\\20260322170942_SeedDevs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAwwEAAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T17:09:43.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAIwDcAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T17:08:01.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\jorge\\OneDrive\\\u00C1rea de Trabalho\\New folder\\cp4-projeto\\ConsultoriaDevApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowEgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T17:07:10.421Z",
+              "WhenOpened": "2026-03-22T17:15:54.406Z",
               "EditorCaption": ""
             }
           ]

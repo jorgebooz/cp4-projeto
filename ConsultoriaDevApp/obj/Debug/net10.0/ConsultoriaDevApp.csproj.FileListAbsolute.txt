@@ -295,5 +295,5 @@ C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevA
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\ConsultoriaDevApp.sourcelink.json
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\bin\Debug\net10.0\BCrypt.Net-Next.dll
-C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\425imzsmu3-{0}-0u5rbrntto-0u5rbrntto.gz
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\425imzsmu3-{0}-cr5bdoh13x-cr5bdoh13x.gz

@@ -20,6 +20,43 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     }
+
+    @if (TempData["WhatsAppDev"] != null)
+    {
+        <div class="whatsapp-card mb-4">
+            <div class="wpp-header">
+                <div class="wpp-icon">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <div class="wpp-title">Mensagem enviada via WhatsApp</div>
+                    <div class="wpp-sub">Dev notificado com sucesso</div>
+                </div>
+                <div class="wpp-status">
+                    <i class="bi bi-check2-all me-1"></i>Entregue
+                </div>
+            </div>
+            <div class="wpp-bubble">
+                <div class="wpp-bubble-header">ConsultoriaDev</div>
+                <p class="wpp-text">
+                    Olá, <strong>@TempData["WhatsAppDev"]</strong>! 👋<br><br>
+                    Você recebeu uma nova solicitação:<br><br>
+                    📋 <strong>Serviço:</strong> @TempData["WhatsAppServico"]<br>
+                    👤 <strong>Cliente:</strong> @TempData["WhatsAppCliente"]<br>
+                    🔖 <strong>Solicitação:</strong> #@TempData["WhatsAppId"]<br><br>
+                    Acesse o painel para visualizar os detalhes e iniciar o atendimento.
+                </p>
+                <div class="wpp-time">
+                    @DateTime.Now.ToString("HH:mm") <i class="bi bi-check2-all ms-1" style="color:#38bdf8"></i>
+                </div>
+            </div>
+            <div class="wpp-footer">
+                <i class="bi bi-lock-fill me-1"></i>
+                Mensagem enviada com criptografia de ponta a ponta
+            </div>
+        </div>
+    }
+
     @if (TempData["Erro"] != null)
     {
         <div class="alert alert-danger alert-dismissible fade show">
