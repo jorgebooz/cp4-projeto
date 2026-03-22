@@ -191,7 +191,6 @@ C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevA
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\74i4avyphk-{0}-ir474ug6zy-ir474ug6zy.gz
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\awi8qzh2nk-{0}-5cl6jzyzps-5cl6jzyzps.gz
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\g6jozqz1qx-{0}-a2c1phmbzv-a2c1phmbzv.gz
-C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\425imzsmu3-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\kz53ypr2uc-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\s54x8lisx5-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\gwlyhmbo7l-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -260,7 +259,6 @@ C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevA
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\Consulto.273E89E5.Up2Date
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\ConsultoriaDevApp.dll
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\refint\ConsultoriaDevApp.dll
@@ -295,3 +293,7 @@ C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevA
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\ConsultoriaDevApp.sourcelink.json
+C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\bin\Debug\net10.0\BCrypt.Net-Next.dll
+C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\compressed\425imzsmu3-{0}-0u5rbrntto-0u5rbrntto.gz
+C:\Users\jorge\OneDrive\Área de Trabalho\New folder\cp4-projeto\ConsultoriaDevApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

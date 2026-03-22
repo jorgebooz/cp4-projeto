@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ConsultoriaDevApp.Models.Solicitacao>
+
+@{
+    ViewData["Title"] = "Painel Admin";
+}
+
+<div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-0">Painel do Tech Líder</h2>
+            <p class="text-muted small mb-0">Gerencie todas as solicitações recebidas</p>
+        </div>
+        <span class="badge bg-primary fs-6">@Model.Count() solicitações</span>
+    </div>
+
+    @if (TempData["Sucesso"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            @TempData["Sucesso"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+    @if (TempData["Erro"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+            @TempData["Erro"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="card border-0 shadow-sm">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Cliente</th>
+                        <th>Serviço</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                        <th>Dev</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var s in Model)
+                    {
+                        <tr>
+                            <td class="text-muted small">@s.Id</td>
+                            <td>
+                                <div class="fw-medium">@s.NomeCliente</div>
+                                <div class="text-muted small">@s.EmailCliente</div>
+                            </td>
+                            <td>@s.Servico?.Nome</td>
+                            <td class="text-muted small">@s.CriadaEm.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>
+                                @{
+                                    var (badgeClass, label) = s.Status switch
+                                    {
+                                        StatusSolicitacao.Pendente => ("bg-warning text-dark", "Pendente"),
+                                        StatusSolicitacao.Aprovada => ("bg-success", "Aprovada"),
+                                        StatusSolicitacao.Reprovada => ("bg-danger", "Reprovada"),
+                                        StatusSolicitacao.EmAndamento => ("bg-info text-dark", "Em andamento"),
+                                        StatusSolicitacao.Concluida => ("bg-secondary", "Concluída"),
+                                        _ => ("bg-secondary", "—")
+                                    };
+                                }
+                                <span class="badge @badgeClass">@label</span>
+                            </td>
+                            <td class="text-muted small">@(s.Dev?.Nome ?? "—")</td>
+                            <td>
+                                <a href="/admin/detalhe/@s.Id" class="btn btn-sm btn-outline-primary">
+                                    Ver detalhes
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

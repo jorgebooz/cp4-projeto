@@ -1,0 +1,85 @@
+﻿@model ConsultoriaDevApp.Models.Solicitacao
+
+@{
+    ViewData["Title"] = "Detalhe da Solicitação";
+    var devs = ViewBag.Devs as List<ConsultoriaDevApp.Models.Usuario> ?? new();
+}
+
+<div class="container py-4" style="max-width: 680px;">
+    <a href="/admin" class="btn btn-sm btn-outline-secondary mb-4">← Voltar</a>
+
+    <div class="card border-0 shadow-sm mb-4" style="background:var(--bg2); border:1px solid var(--border) !important;">
+        <div class="card-body p-4">
+            <h5 style="color:var(--accent); font-family:var(--font-mono); font-size:14px; margin-bottom:6px;">
+                @Model.Servico?.Nome
+            </h5>
+            <p style="color:var(--text-muted); font-size:12px; margin-bottom:20px;">
+                Solicitação #@Model.Id — @Model.CriadaEm.ToString("dd/MM/yyyy HH:mm")
+            </p>
+
+            <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                    <div style="font-size:11px; color:var(--text-dim); margin-bottom:4px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em;">Cliente</div>
+                    <div style="color:var(--text); font-weight:500;">@Model.NomeCliente</div>
+                </div>
+                <div class="col-sm-6">
+                    <div style="font-size:11px; color:var(--text-dim); margin-bottom:4px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em;">E-mail</div>
+                    <div style="color:var(--text); font-weight:500;">@Model.EmailCliente</div>
+                </div>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.Observacao))
+            {
+                <div style="background:var(--bg3); border:1px solid var(--border); border-radius:var(--radius); padding:14px 16px; margin-top:16px;">
+                    <div style="font-size:11px; color:var(--text-dim); margin-bottom:6px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em;">Observação do cliente</div>
+                    <p style="color:var(--text-muted); margin:0; font-size:14px;">@Model.Observacao</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (Model.Status == StatusSolicitacao.Pendente)
+    {
+        <div class="card border-0 shadow-sm" style="background:var(--bg2); border:1px solid var(--border) !important;">
+            <div class="card-body p-4">
+                <h6 style="color:var(--text); font-weight:600; margin-bottom:20px; font-family:var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:.08em;">
+                    Tomar decisão
+                </h6>
+
+                <form asp-action="Aprovar" asp-route-id="@Model.Id" method="post" class="mb-3">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label class="form-label">Atribuir dev (opcional)</label>
+                        <select name="devId" class="form-select">
+                            <option value="">— Sem atribuição —</option>
+                            @foreach (var dev in devs)
+                            {
+                                <option value="@dev.Id">@dev.Nome</option>
+                            }
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 mb-2 py-2">
+                        Aprovar solicitação
+                    </button>
+                </form>
+
+                <form asp-action="Reprovar" asp-route-id="@Model.Id" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-outline-danger w-100 py-2">
+                        Reprovar solicitação
+                    </button>
+                </form>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div style="background:var(--bg2); border:1px solid var(--border); border-radius:var(--radius-lg); padding:20px 24px;">
+            <span style="font-size:13px; color:var(--text-muted);">
+                Esta solicitação já foi
+                <strong style="color:var(--text);">@Model.Status.ToString().ToLower()</strong>
+                em @Model.AtualizadaEm?.ToString("dd/MM/yyyy HH:mm").
+            </span>
+        </div>
+    }
+</div>

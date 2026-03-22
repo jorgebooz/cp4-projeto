@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ConsultoriaDevApp.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialFull : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -89,6 +89,20 @@ namespace ConsultoriaDevApp.Migrations
                     { 2, true, "Análise completa do código com relatório de melhorias.", "Code Review", 250m, "24h" },
                     { 3, true, "Implementação de funcionalidade sob demanda.", "Desenvolvimento de Feature", 800m, "72h" },
                     { 4, true, "Diagnóstico e correção de bugs em produção.", "Correção de Bug Crítico", 350m, "12h" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Usuarios",
+                columns: new[] { "Id", "Ativo", "CriadoEm", "Email", "Nome", "Role", "SenhaHash" },
+                values: new object[,]
+                {
+                    { 1, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "techlider@consultoria.com", "Tech Líder", 1, "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS" },
+                    { 2, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "admin@consultoria.com", "Admin", 3, "$2a$11$pu1AVkBrO5UnKu1.AbWRf.wdh1YRjz1PLw8OuxAkXPIvsMcaXfa8K" },
+                    { 3, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "joaomiguel@consultoria.com", "João Miguel", 2, "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS" },
+                    { 4, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "anaalice@consultoria.com", "Ana Alice", 2, "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS" },
+                    { 5, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "bentooliveira@consultoria.com", "Bento Oliveira", 2, "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS" },
+                    { 6, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "catarinaroberta@consultoria.com", "Catarina Roberta", 2, "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS" },
+                    { 7, true, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), "arielmercedes@consultoria.com", "Ariel Mercedes", 2, "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS" }
                 });
 
             migrationBuilder.CreateIndex(

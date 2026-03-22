@@ -17,7 +17,7 @@ namespace ConsultoriaDevApp.Models
 
         public decimal Preco { get; set; }
 
-        public bool Ativo { get; set; } = true;
+        public bool Ativo { get; set; }
 
         public ICollection<Solicitacao> Solicitacoes { get; set; } = new List<Solicitacao>();
     }

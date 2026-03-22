@@ -26,8 +26,8 @@ namespace ConsultoriaDevApp.Models
 
         public RoleUsuario Role { get; set; } = RoleUsuario.Cliente;
 
-        public DateTime CriadoEm { get; set; } = DateTime.UtcNow;
+        public DateTime CriadoEm { get; set; }
 
-        public bool Ativo { get; set; } = true;
+        public bool Ativo { get; set; }
     }
 }

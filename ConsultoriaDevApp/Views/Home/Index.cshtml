@@ -1,33 +1,33 @@
 ﻿@model IEnumerable<ConsultoriaDevApp.Models.Servico>
-
 @{
-    ViewData["Title"] = "Nossos Serviços";
+    ViewData["Title"] = "Serviços";
 }
 
-<section class="hero-section text-center py-5 mb-5">
-    <div class="container">
-        <h1 class="display-5 fw-bold">Consultoria em Desenvolvimento</h1>
-        <p class="lead text-muted">Escolha o serviço ideal para o seu projeto e receba atendimento especializado.</p>
+<div class="container">
+    <div class="hero-section">
+        <span class="eyebrow">// desenvolvimento sob demanda</span>
+        <h1>Resolva seu problema<br>com quem <em>entende de código</em></h1>
+        <p class="lead">Escolha o serviço, envie sua solicitação e nosso time entra em contato em até 12h.</p>
     </div>
-</section>
 
-<div class="container mb-5">
-    <div class="row g-4">
+    <div class="hero-divider"></div>
+
+    <div class="row g-4 mb-5">
         @foreach (var servico in Model)
         {
             <div class="col-md-6 col-lg-4">
                 <div class="card service-card h-100 shadow-sm border-0">
                     <div class="card-body d-flex flex-column">
-                        <div class="service-icon mb-3">
-                            <i class="bi bi-code-slash fs-2 text-primary"></i>
+                        <div class="service-icon">
+                            <i class="bi bi-terminal"></i>
                         </div>
-                        <h5 class="card-title fw-semibold">@servico.Nome</h5>
-                        <p class="card-text text-muted flex-grow-1">@servico.Descricao</p>
-                        <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
-                            <span class="badge bg-primary-subtle text-primary px-3 py-2">
-                                <i class="bi bi-clock me-1"></i> @servico.TempoResposta
+                        <h5 class="card-title">@servico.Nome</h5>
+                        <p class="card-text flex-grow-1">@servico.Descricao</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4 mb-4">
+                            <span class="tag-tempo">
+                                <i class="bi bi-clock"></i> @servico.TempoResposta
                             </span>
-                            <span class="fw-bold fs-5 text-dark">R$ @servico.Preco.ToString("N2")</span>
+                            <span class="preco-label">R$&nbsp;@servico.Preco.ToString("N2")</span>
                         </div>
                         <button class="btn btn-primary w-100"
                                 data-bs-toggle="modal"
@@ -43,35 +43,37 @@
     </div>
 </div>
 
-<!-- Modal de solicitação -->
+<!-- Modal -->
 <div class="modal fade" id="modalSolicitacao" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header border-0 pb-0">
+        <div class="modal-content">
+            <div class="modal-header px-4 pt-4 pb-3">
                 <div>
-                    <h5 class="modal-title fw-bold">Solicitar serviço</h5>
-                    <p class="text-muted small mb-0" id="modalServicoNome"></p>
+                    <h5 class="modal-title fw-semibold mb-0">Solicitar serviço</h5>
+                    <p class="mb-0" id="modalServicoNome"
+                       style="font-family:var(--font-mono);font-size:11px;color:var(--accent);margin-top:4px"></p>
                 </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <div class="alert alert-success d-flex align-items-center mb-4" role="alert">
-                    <i class="bi bi-check-circle-fill me-2"></i>
-                    <span>Seu pedido será analisado e você receberá uma resposta no e-mail informado.</span>
+                <div class="alert alert-success d-flex align-items-center gap-2 mb-4">
+                    <i class="bi bi-check-circle-fill"></i>
+                    Seu pedido será analisado e você receberá resposta por e-mail.
                 </div>
-                <form asp-controller="Solicitacao" asp-action="Criar" method="post" id="formSolicitacao">
+                <form asp-controller="Solicitacao" asp-action="Criar" method="post">
+                    @Html.AntiForgeryToken()
                     <input type="hidden" name="ServicoId" id="inputServicoId" />
                     <div class="mb-3">
-                        <label class="form-label fw-medium">Seu nome</label>
+                        <label class="form-label">Seu nome</label>
                         <input type="text" name="NomeCliente" class="form-control" placeholder="Nome completo" required />
                     </div>
-                    <div class="mb-4">
-                        <label class="form-label fw-medium">Seu e-mail</label>
+                    <div class="mb-3">
+                        <label class="form-label">Seu e-mail</label>
                         <input type="email" name="EmailCliente" class="form-control" placeholder="email@exemplo.com" required />
                     </div>
                     <div class="mb-4">
-                        <label class="form-label fw-medium">Observação <span class="text-muted">(opcional)</span></label>
-                        <textarea name="Observacao" class="form-control" rows="3" placeholder="Descreva brevemente seu problema..."></textarea>
+                        <label class="form-label">Observação <span style="color:var(--text-dim)">(opcional)</span></label>
+                        <textarea name="Observacao" class="form-control" rows="3" placeholder="Descreva brevemente..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary w-100 py-2">
                         <i class="bi bi-send me-2"></i>Enviar solicitação
@@ -84,10 +86,10 @@
 
 @section Scripts {
     <script>
-        document.getElementById('modalSolicitacao').addEventListener('show.bs.modal', function (e) {
+        document.getElementById('modalSolicitacao').addEventListener('show.bs.modal', function(e) {
             const btn = e.relatedTarget;
             document.getElementById('inputServicoId').value = btn.dataset.servicoId;
-            document.getElementById('modalServicoNome').textContent = btn.dataset.servicoNome;
+            document.getElementById('modalServicoNome').textContent = '// ' + btn.dataset.servicoNome;
         });
     </script>
 }

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConsultoriaDevApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260322011705_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260322171205_InitialFull")]
+    partial class InitialFull
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -166,6 +166,78 @@ namespace ConsultoriaDevApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "techlider@consultoria.com",
+                            Nome = "Tech Líder",
+                            Role = 1,
+                            SenhaHash = "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "admin@consultoria.com",
+                            Nome = "Admin",
+                            Role = 3,
+                            SenhaHash = "$2a$11$pu1AVkBrO5UnKu1.AbWRf.wdh1YRjz1PLw8OuxAkXPIvsMcaXfa8K"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "joaomiguel@consultoria.com",
+                            Nome = "João Miguel",
+                            Role = 2,
+                            SenhaHash = "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "anaalice@consultoria.com",
+                            Nome = "Ana Alice",
+                            Role = 2,
+                            SenhaHash = "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "bentooliveira@consultoria.com",
+                            Nome = "Bento Oliveira",
+                            Role = 2,
+                            SenhaHash = "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "catarinaroberta@consultoria.com",
+                            Nome = "Catarina Roberta",
+                            Role = 2,
+                            SenhaHash = "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Ativo = true,
+                            CriadoEm = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            Email = "arielmercedes@consultoria.com",
+                            Nome = "Ariel Mercedes",
+                            Role = 2,
+                            SenhaHash = "$2a$11$T1OPZcb7ZdSkQlcFq.Lxw.deUMxKxOX0dOJPRtgGDei5OfLI72TTS"
+                        });
                 });
 
             modelBuilder.Entity("ConsultoriaDevApp.Models.Solicitacao", b =>

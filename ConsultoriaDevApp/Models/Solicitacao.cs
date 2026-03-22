@@ -25,9 +25,9 @@ namespace ConsultoriaDevApp.Models
         [MaxLength(500)]
         public string? Observacao { get; set; }
 
-        public StatusSolicitacao Status { get; set; } = StatusSolicitacao.Pendente;
+        public StatusSolicitacao Status { get; set; }
 
-        public DateTime CriadaEm { get; set; } = DateTime.UtcNow;
+        public DateTime CriadaEm { get; set; }
 
         public DateTime? AtualizadaEm { get; set; }
 
